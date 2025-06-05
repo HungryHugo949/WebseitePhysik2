@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energieversorgung verstehen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#reversibel">1. Reversibel vs. Irreversibel</a></li>
+      <li><a href="#entropie">2. Entropie</a></li>
+      <li><a href="#energiefluss">3. Energieflussdiagramm</a></li>
+      <li><a href="#kuehlturm">4. Kühlturm</a></li>
+      <li><a href="#alltag">5. Entropie im Alltag</a></li>
+      <li><a href="#traeger">6. Energieträger</a></li>
+      <li><a href="#bedarf">7. Energiebedarf</a></li>
+      <li><a href="#infrastruktur">8. Infrastruktur</a></li>
+      <li><a href="#wende">9. Energiewende</a></li>
+      <li><a href="#wildpoldsried">10. Wildpoldsried</a></li>
+      <li><a href="#doerfer">11. Energiedörfer</a></li>
+      <li><a href="#verbrauch">12. Energieverbrauch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Titelbereich mit Hintergrundbild -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Energieversorgung verstehen</h1>
+      <p>Interaktive Lernplattform zur Energieumwandlung, Entropie und Energiewende</p>
+    </div>
+  </header>
+  <!-- Abschnitt 1: Reversibel vs. Irreversibel -->
+  <section id="reversibel">
+    <h2>1. Reversibel vs. Irreversibel</h2>
+    <h3>1. Reversible und irreversible Vorgänge</h3>
+    
+    <div class="infobox orange">
+      <h4>🧠 Einführung: Was bedeutet reversibel und irreversibel?</h4>
+      <p>In der Physik beschreibt man viele Prozesse danach, ob sie sich umkehren lassen oder nicht.</p>
+      <ul>
+        <li>🟢 <strong>Reversibel:</strong> Ein Vorgang ist reversibel, wenn man ihn vollständig rückgängig machen kann – ohne dass dabei Energie verloren geht oder etwas „kaputtgeht“.</li>
+        <li>🔴 <strong>Irreversibel:</strong> Ein irreversibler Vorgang kann nicht vollständig zurückgeführt werden. Dabei geht oft Energie in Form von Wärme verloren – und es entsteht <em>Entropie</em>, also Unordnung.</li>
+        <li>💡 In der Realität sind fast alle Vorgänge <strong>irreversibel</strong>, weil immer etwas Reibung, Wärme oder Verlust entsteht.</li>
+      </ul>
+
+      <div class="beispiele">
+        <h5>Beispiele:</h5>
+        <ul>
+          <li>❄️ <strong>Eis schmilzt:</strong> Kann durch Gefrieren rückgängig gemacht werden → reversibel (wenn ideal).</li>
+          <li>🔥 <strong>Holz verbrennen:</strong> Die Asche kann nicht zurück in Holz verwandelt werden → irreversibel.</li>
+          <li>☕ <strong>Kaffee kühlt ab:</strong> Die Wärme verteilt sich – man kann ihn nicht einfach wieder heiß machen → irreversibel.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p><strong>Jetzt bist du dran:</strong> Ziehe die folgenden Beispiele in die richtige Kategorie.</p>
+
+    <div class="drag-container">
+      <div class="drag-items">
+        <div class="drag" draggable="true">🍏 Pendel</div>
+        <div class="drag" draggable="true">🔥 Verbrennung</div>
+        <div class="drag" draggable="true">💡 Blinken</div>
+        <div class="drag" draggable="true">❄️ Kompression (langsam)</div>
+        <div class="drag" draggable="true">☕ Kaffee kühlt ab</div>
+      </div>
+      <div class="drop-area">
+        <div class="drop-zone" id="zone-reversibel">
+          <h4>🔄 Reversibel</h4>
+        </div>
+        <div class="drop-zone" id="zone-irreversibel">
+          <h4>❌ Irreversibel</h4>
+        </div>
+      </div>
+    </div>
+
+    <p class="definition">
+      <strong>Reversibel:</strong> Vorgänge, die sich (idealerweise) umkehrbar abspielen, ohne dass dabei Energie verloren geht.<br>
+      <strong>Irreversibel:</strong> Vorgänge, bei denen Entropie entsteht und keine vollständige Rückkehr in den Ursprungszustand möglich ist.
+    </p>
+  </section>
+  <!-- Abschnitt 2: Entropie -->
+  <section id="entropie">
+    <h2>2. Entropie</h2>
+    <h3>2. Entropie und ihre Bedeutung</h3>
+
+    <div class="infobox orange">
+      <h4>🌿 Einführung: Was ist Entropie?</h4>
+      <p>Entropie beschreibt die <strong>Unordnung</strong> in einem System. Je geordneter die Dinge sind, desto geringer die Entropie – je chaotischer, desto höher die Entropie.</p>
+      <p>🔍 <strong>Einfach erklärt:</strong> Stell dir eine Kiste mit vielen farbigen Kugeln vor. Sind alle Kugeln an ihrem Platz sortiert, ist die Entropie niedrig. Wenn du die Kiste schüttelst und die Kugeln sich unkontrolliert verteilen, steigt die Entropie, weil mehr Unordnung entsteht.</p>
+      <p>🔬 <strong>Beispiel:</strong> Ein Eiswürfel schmilzt im warmen Raum. Die Moleküle im festen Eis waren sehr geordnet; im geschmolzenen Zustand bewegen sich die Wassermoleküle ungeordnet im Glas – die Entropie steigt.</p>
+      <p>⚠️ <strong>2. Hauptsatz der Thermodynamik:</strong> In einem abgeschlossenen System nimmt die Entropie immer zu. Wärme fließt spontan immer von warm nach kalt, wodurch Entropie erzeugt wird.</p>
+      <p>➡️ Du siehst also: Entropie ist nichts Mysteriöses, sondern beschreibt genau, wie geordnet oder ungeordnet ein Vorgang abläuft.</p>
+    </div>
+
+    <!-- Bild mit Teilchenverteilung -->
+    <div class="entropie-grafik">
+      <img src="assets/bilder/entropie-schema.png" alt="Wärmefluss und Entropiezunahme">
+      <p class="bildunterschrift">→ Wärmefluss verursacht Entropie-Zunahme.</p>
+    </div>
+
+    <!-- Slider zur Temperaturdifferenz -->
+    <div class="slider-box">
+      <label for="tempDiff">Temperaturdifferenz (ΔT): <span id="tempDisplay">30</span> °C</label>
+      <input type="range" id="tempDiff" min="0" max="100" step="1" value="30" />
+      <p>Geschätzte Entropiezunahme: <strong><span id="entropieWert">0.10</span> kJ/K</strong></p>
+    </div>
+
+    <!-- Quizfrage -->
+    <div class="quizbox pink">
+      <p><strong>Quizfrage:</strong> Was beschreibt den 2. Hauptsatz der Thermodynamik?</p>
+      <button class="quiz-btn">🔋 Energie bleibt immer erhalten</button>
+      <button class="quiz-btn correct">📈 Entropie nimmt in abgeschlossenen Systemen zu</button>
+      <button class="quiz-btn">🌡️ Temperatur bleibt konstant</button>
+    </div>
+  </section>
+  <!-- Abschnitt 3: Energieflussdiagramm -->
+  <section id="energiefluss">
+    <h2>3. Energieflussdiagramm</h2>
+    <h3>3. Energiefluss im Kraftwerk – Interaktiv</h3>
+
+    <div class="infobox orange">
+      <h4>🔍 Energiefluss im Überblick</h4>
+      <p>In der <strong>Feuerkammer</strong> wird Brennstoff verbrannt und erhitzt Wasser zu <strong>Dampf</strong>. Dieser Dampf treibt die <strong>Turbine</strong> an, welche den <strong>Generator</strong> in Drehung versetzt und so Strom erzeugt. Übrig gebliebener Dampf wird im <strong>Kondensator</strong> wieder zu Wasser – der Kreislauf schließt sich.</p>
+    </div>
+
+    <!-- Diagramm -->
+    <div class="kraftwerk-diagramm">
+      <div class="element feuerkammer" onclick="zeigeDetails('Feuerkammer')">Feuerkammer</div>
+      <div class="arrow">➡️</div>
+      <div class="element turbine" onclick="zeigeDetails('Turbine')">Turbine</div>
+      <div class="arrow">➡️</div>
+      <div class="element generator" onclick="zeigeDetails('Generator')">Generator</div>
+      <div class="arrow">➡️</div>
+      <div class="element kondensator" onclick="zeigeDetails('Kondensator')">Kondensator</div>
+    </div>
+
+    <!-- Info bei Klick -->
+    <div id="details-box" class="infobox green" style="display: none;">
+      <p><strong>Details:</strong> <span id="details-text">...</span></p>
+    </div>
+
+    <!-- Temperatur-Slider -->
+    <div class="slider-box green">
+      <label for="kesselTemp">Kesseltemperatur (°C): <span id="kesselTempDisplay">500</span></label>
+      <input type="range" id="kesselTemp" min="300" max="700" step="10" value="500" />
+      <p>Wirkungsgrad: <strong><span id="wirkungsgrad">35</span>%</strong><br>
+         Elektrische Leistung: <strong><span id="leistung">350</span> MW</strong></p>
+    </div>
+  </section>
+  <!-- Abschnitt 4: Kühlturm -->
+  <section id="kuehlturm">
+    <h2>4. Kühlturm</h2>
+    <h3>4. Kühlung im Kraftwerksprozess</h3>
+
+    <div class="infobox orange">
+      <h4>❄️ Warum ist Kühlung wichtig?</h4>
+      <p>Ein Kraftwerk erzeugt nicht nur elektrische Energie – es produziert auch sehr viel <strong>Abwärme</strong>. Diese muss durch Kühlung abgeführt werden, z. B. über einen großen <strong>Kühlturm</strong>. Wird die Kühlung deaktiviert, kann sich das System überhitzen – im schlimmsten Fall: <strong>Explosion!</strong></p>
+    </div>
+
+    <!-- Kühlturm-Steuerung -->
+    <div class="cooling-control">
+      <label>
+        <input type="checkbox" id="kuehlungCheckbox" checked>
+        💧 Kühlung aktivieren
+      </label>
+    </div>
+
+    <!-- Temperaturanzeige -->
+    <div class="temperaturanzeige">
+      <p>Kesseltemperatur: <strong><span id="anzeigeTemp">550</span> °C</strong></p>
+      <div class="temp-bar">
+        <div id="tempFuellung" style="width: 70%;"></div>
+      </div>
+    </div>
+
+    <!-- Warnung bei Deaktivierung -->
+    <div id="explosionswarnung" class="explosion-box" style="display: none;">
+      💥 <strong>Achtung!</strong> Die Temperatur steigt unkontrolliert – das System ist instabil!
+    </div>
+  </section>
+  <!-- Abschnitt 5: Entropie im Alltag -->
+  <section id="alltag">
+    <h2>5. Entropie im Alltag</h2>
+    <h3>5.1 Wo begegnet uns Entropie?</h3>
+
+    <div class="infobox orange">
+      <h4>🔎 Beispiele aus dem Alltag</h4>
+      <p>Auch im Alltag begegnet uns Entropie ständig – ob beim Kochen, im Bad oder im Auto.</p>
+    </div>
+
+    <!-- Bild + Auswahl -->
+    <div class="entropie-alltag-grid">
+      <div class="entropie-bild">
+        <img src="assets/bilder/badewanne.jpg" alt="Badewanne">
+        <p>Badewanne kühlt aus</p>
+        <div class="antwort-auswahl">
+          <label><input type="radio" name="badewanne" value="reversibel"> Reversibel</label>
+          <label><input type="radio" name="badewanne" value="irreversibel"> Irreversibel</label>
+        </div>
+      </div>
+
+      <div class="entropie-bild">
+        <img src="assets/bilder/ei.jpg" alt="Gekochtes Ei">
+        <p>Ei wird hart gekocht</p>
+        <div class="antwort-auswahl">
+          <label><input type="radio" name="ei" value="reversibel"> Reversibel</label>
+          <label><input type="radio" name="ei" value="irreversibel"> Irreversibel</label>
+        </div>
+      </div>
+
+      <div class="entropie-bild">
+        <img src="assets/bilder/cola.jpg" alt="Cola-Dose geöffnet">
+        <p>Cola-Dose geöffnet</p>
+        <div class="antwort-auswahl">
+          <label><input type="radio" name="cola" value="reversibel"> Reversibel</label>
+          <label><input type="radio" name="cola" value="irreversibel"> Irreversibel</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quizauswertung -->
+    <button class="quiz-auswerten-btn" onclick="auswertenEntropieAlltag()">Antworten überprüfen</button>
+    <div id="feedbackAlltag" class="feedback-box"></div>
+  </section>
+  <!-- Abschnitt 6: Energieträger -->
+  <section id="traeger">
+    <h2>6. Energieträger</h2>
+    <h3>6.1 Ordne die Energieträger ein</h3>
+
+    <div class="infobox orange">
+      <h4>🔋 Was sind Energieträger?</h4>
+      <p>Energieträger sind Stoffe oder Quellen, die Energie enthalten, die wir nutzen können. Sie lassen sich nach zwei Kriterien einteilen:</p>
+      <ul>
+        <li><strong>Primär / Sekundär:</strong> Direkt in der Natur vorkommend oder weiterverarbeitet</li>
+        <li><strong>Regenerativ / Nicht regenerativ:</strong> Nachhaltig verfügbar oder endlich</li>
+      </ul>
+    </div>
+
+    <!-- Zuordnungstabelle -->
+    <div class="zuordnungs-grid">
+      <div class="zuordnungs-kategorie">
+        <h4>Primär</h4>
+        <div class="checkboxen">
+          <label><input type="checkbox" name="primär" value="Erdgas"> Erdgas</label>
+          <label><input type="checkbox" name="primär" value="Sonnenlicht"> Sonnenlicht</label>
+          <label><input type="checkbox" name="primär" value="Kohle"> Kohle</label>
+          <label><input type="checkbox" name="primär" value="Wind"> Wind</label>
+        </div>
+      </div>
+
+      <div class="zuordnungs-kategorie">
+        <h4>Sekundär</h4>
+        <div class="checkboxen">
+          <label><input type="checkbox" name="sekundär" value="Wasserstoff"> Wasserstoff</label>
+          <label><input type="checkbox" name="sekundär" value="Benzin"> Benzin</label>
+          <label><input type="checkbox" name="sekundär" value="Strom"> Strom</label>
+          <label><input type="checkbox" name="sekundär" value="Fernwärme"> Fernwärme</label>
+        </div>
+      </div>
+
+      <div class="zuordnungs-kategorie">
+        <h4>Regenerativ</h4>
+        <div class="checkboxen">
+          <label><input type="checkbox" name="regenerativ" value="Wind"> Wind</label>
+          <label><input type="checkbox" name="regenerativ" value="Sonnenlicht"> Sonnenlicht</label>
+          <label><input type="checkbox" name="regenerativ" value="Holz"> Holz</label>
+          <label><input type="checkbox" name="regenerativ" value="Biogas"> Biogas</label>
+        </div>
+      </div>
+
+      <div class="zuordnungs-kategorie">
+        <h4>Nicht regenerativ</h4>
+        <div class="checkboxen">
+          <label><input type="checkbox" name="nicht-regenerativ" value="Kohle"> Kohle</label>
+          <label><input type="checkbox" name="nicht-regenerativ" value="Erdgas"> Erdgas</label>
+          <label><input type="checkbox" name="nicht-regenerativ" value="Uran"> Uran</label>
+          <label><input type="checkbox" name="nicht-regenerativ" value="Benzin"> Benzin</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Auswertungsbutton -->
+    <button class="quiz-auswerten-btn" onclick="auswertenTraeger()">Antworten überprüfen</button>
+    <div id="feedbackTraeger" class="feedback-box"></div>
+  </section>
+  <!-- Abschnitt 7: Energiebedarf -->
+  <section id="bedarf">
+    <h2>7. Energiebedarf</h2>
+    <h3>7.1 Entwicklung des Energieverbrauchs</h3>
+
+    <div class="infobox orange">
+      <h4>📈 Wie verändert sich unser Energiebedarf?</h4>
+      <p>In Deutschland hat sich der Energiebedarf seit dem 20. Jahrhundert stark verändert – durch Industrie, Verkehr, Haushalte und Digitalisierung. In der Grafik siehst du, wie sich der Verbrauch in verschiedenen Bereichen über die Zeit entwickelt.</p>
+    </div>
+
+    <!-- Zeitstrahl / Balkendiagramm -->
+    <div class="balkendiagramm-container">
+      <div class="jahr-auswahl">
+        <label for="jahrSlider">Jahr: <span id="jahrAnzeige">1970</span></label>
+        <input type="range" id="jahrSlider" min="1970" max="2020" step="10" value="1970">
+      </div>
+
+      <div class="balken">
+        <div class="balken-eintrag">
+          <span>Haushalte</span>
+          <div class="balken-haushalte" style="width: 30%;"></div>
+        </div>
+        <div class="balken-eintrag">
+          <span>Verkehr</span>
+          <div class="balken-verkehr" style="width: 25%;"></div>
+        </div>
+        <div class="balken-eintrag">
+          <span>Industrie</span>
+          <div class="balken-industrie" style="width: 35%;"></div>
+        </div>
+        <div class="balken-eintrag">
+          <span>Gewerbe</span>
+          <div class="balken-gewerbe" style="width: 10%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Abschnitt 8: Infrastruktur -->
+  <section id="infrastruktur">
+    <h2>8. Strom- und Gasinfrastruktur in Europa</h2>
+
+    <div class="infobox orange">
+      <h4>🗺️ Wie sind Strom und Gas vernetzt?</h4>
+      <p>Europa ist über Stromtrassen und Gaspipelines eng miteinander verbunden. Du kannst in der Karte unten zwischen beiden Infrastrukturen umschalten.</p>
+    </div>
+
+    <!-- Kartenumschalter -->
+    <div class="kartenumschalter">
+      <label><input type="radio" name="karte" value="strom" checked> 🔌 Stromnetz</label>
+      <label><input type="radio" name="karte" value="gas"> 🔥 Gasnetz</label>
+    </div>
+
+    <!-- Karte -->
+    <div id="europakarte" class="karte">
+      <!-- Diese Karte wird später mit JavaScript + Leaflet.js gefüllt -->
+    </div>
+  </section>
+
+  <!-- Abschnitt 9: Energiewende-Projekte -->
+  <section id="wende">
+    <h2>9. Energiewende: Projekte in Deutschland</h2>
+
+    <div class="infobox orange">
+      <h4>🏗️ Beispielhafte Projekte</h4>
+      <p>Viele Städte und Gemeinden setzen auf neue Energiekonzepte. Auf der Karte siehst du einige ausgewählte Orte mit Kurzinfos.</p>
+    </div>
+
+    <div id="deutschlandkarte" class="karte">
+      <!-- Auch diese Karte wird per Leaflet mit Marker befüllt -->
+    </div>
+  </section>
+  <!-- Abschnitt 10: Wildpoldsried -->
+  <section id="wildpoldsried">
+    <h2>10. Wildpoldsried</h2>
+    <h3>Beispiel für ein energieautarkes Dorf</h3>
+
+    <div class="infobox green">
+      <p>Wildpoldsried in Bayern erzeugt <strong>mehr Energie als es verbraucht</strong> – und das mit Photovoltaik, Biogas, Wind und Wasserkraft. Es gilt als Vorzeigegemeinde der Energiewende.</p>
+    </div>
+
+    <img src="assets/bilder/wildpoldsried.jpg" alt="Luftbild Wildpoldsried" class="bildgross">
+  </section>
+
+  <!-- Abschnitt 11: Energiedörfer -->
+  <section id="doerfer">
+    <h2>11. Weitere Energiedörfer</h2>
+
+    <div class="infobox orange">
+      <p>Auch andere Dörfer setzen auf erneuerbare Energien. Klicke auf der Karte auf die Orte und erfahre mehr!</p>
+    </div>
+
+    <div id="energiedoerferKarte" class="karte">
+      <!-- Leaflet-Karte mit Marker -->
+    </div>
+  </section>
+
+  <!-- Abschnitt 12: Stromverbrauch-Rechner -->
+  <section id="verbrauch">
+    <h2>12. Energieverbrauchs-Rechner</h2>
+    <h3>Was verbraucht dein Haushalt?</h3>
+
+    <div class="verbrauch-formular">
+      <label>
+        Anzahl Personen im Haushalt:
+        <input type="number" id="personen" min="1" value="3">
+      </label>
+      <label>
+        Geräte im Dauerbetrieb (z. B. Router, Kühlschrank):
+        <input type="number" id="dauerbetrieb" value="3">
+      </label>
+      <label>
+        Anzahl Waschladungen pro Woche:
+        <input type="number" id="waschen" value="4">
+      </label>
+
+      <button onclick="verbrauchBerechnen()">Verbrauch berechnen</button>
+    </div>
+
+    <div id="verbrauchErgebnis" class="verbrauch-ausgabe"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lernplattform „Energie verstehen“ – Alle Rechte vorbehalten.</p>
+  </footer>
+
+</body>
+</html>
